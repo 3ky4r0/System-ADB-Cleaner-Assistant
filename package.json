@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "wrangler pages deploy out"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@yume-chan/adb": "^2.6.0",
@@ -22,7 +22,8 @@
   },
   "devDependencies": {
     "eslint": "^9",
-    "eslint-config-next": "16.2.10"
+    "eslint-config-next": "16.2.10",
+    "wrangler": "^4.131.0"
   },
   "engines": {
     "node": ">=18.0.0"
