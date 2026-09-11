@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/saca',
+  /* config options here */
 };
 
 export default nextConfig;
