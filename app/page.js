@@ -536,7 +536,9 @@ export default function Home() {
               ) : (
                 <div className="empty-state">
                   <Search size={36} style={{ color: '#9ca3af', marginBottom: '8px' }} />
-                  <h3>No matching system apps</h3>
+                  <p className="empty-state-text" style={{ fontWeight: 400, fontSize: '14px', color: '#6b7280', margin: 0 }}>
+                    No matching system apps
+                  </p>
                 </div>
               )}
             </section>
@@ -577,7 +579,9 @@ export default function Home() {
               ) : (
                 <div className="empty-state">
                   <Search size={36} style={{ color: '#9ca3af', marginBottom: '8px' }} />
-                  <h3>No matching user apps</h3>
+                  <p className="empty-state-text" style={{ fontWeight: 400, fontSize: '14px', color: '#6b7280', margin: 0 }}>
+                    No matching user apps
+                  </p>
                 </div>
               )}
             </section>

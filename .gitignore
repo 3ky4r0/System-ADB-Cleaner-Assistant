@@ -19,6 +19,9 @@
 
 # production
 /build
+/dist/
+*.exe
+*.dll
 
 # misc
 .DS_Store

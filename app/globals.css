@@ -220,13 +220,12 @@ body {
 .column-header {
   padding-bottom: 12px;
   border-bottom: 1px solid transparent;
-  transition: box-shadow 0.2s, border-color 0.2s;
+  transition: border-color 0.2s;
   z-index: 10;
 }
 
 .column-header.scrolled {
   border-bottom-color: #e5e7eb;
-  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.05);
 }
 
 .column-header h2 {
@@ -258,6 +257,26 @@ body {
   border-radius: 0;
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.empty-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.empty-state h3,
+.empty-state p,
+.empty-state-text {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-weight: normal !important;
+  color: #6b7280 !important;
+  margin: 0 !important;
 }
 
 .system-column .package-list {

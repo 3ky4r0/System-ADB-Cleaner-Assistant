@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SACA - System ADB Cleaner Assistant
 
-## Getting Started
+> An interactive web application to manage, list, and uninstall Android applications/packages via ADB directly in the browser using WebUSB.
 
-First, run the development server:
+Developed by **3ky4r0**.
+
+---
+
+## ✨ Features
+
+- 🔌 **WebUSB Connection**: Connect directly to your Android device from any Chromium-based browser (Chrome, Edge, Brave, Opera) without needing manual ADB command-line setups.
+- 📦 **Package Management**:
+  - Distinguishes between **System Apps** and **User Apps**.
+  - Search packages by package name or app name in real-time.
+  - Multi-select packages with batch uninstall capabilities.
+  - Safety warnings for system critical packages.
+- 💾 **Export List**: Export package lists to JSON for backup or auditing.
+- ⚡ **Lightweight & Fast**: Built with Next.js and optimized for static export.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+1. A Chromium-based browser supporting WebUSB (Google Chrome, Microsoft Edge, Brave, etc.).
+2. Enable **USB Debugging** on your Android device (Settings > Developer Options > USB Debugging).
+3. Connect your Android phone to your computer using a USB cable.
+
+### Local Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to use the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Deployment (Cloudflare Pages)
 
-## Learn More
+This project is configured for static export (`output: 'export'`), producing pure static files in the `out/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+### Build
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deploy with Wrangler CLI
+```bash
+npx wrangler pages deploy out --project-name=saca
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Or connect the repository `3ky4r0/saca` directly to **Cloudflare Pages** with build command `npm run build` and output directory `out`.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the [MIT License](LICENSE) - Copyright (c) 2026 **3ky4r0**.
