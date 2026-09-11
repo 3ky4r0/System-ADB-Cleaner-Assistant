@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "s4s4",
+  "name": "saca",
   "compatibility_date": "2026-09-10",
   "assets": {
     "directory": "./out",
